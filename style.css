@@ -1,0 +1,152 @@
+/* Resetando o CSS do Site */
+
+body {
+    background-color: #e6eff6;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+/* Criando a parte estrutural do Site */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "row1" "row2";
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.row1 {
+    width: 100%;
+    grid-area: row1;
+    background-color: #ffffff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-bottom: 20px;
+}
+
+.row2 {
+    width: 100%;
+    grid-area: row2;
+    display: flex;
+}
+
+.first {
+    background-color: #2bb3b1;
+    width: 50%;
+    border-bottom-left-radius: 8px;
+    box-shadow: #000000;
+    padding-bottom: 12px;
+    padding-left: 40px;
+}
+
+.second {
+    background-color: #4abebd;
+    width: 50%;
+    border-bottom-right-radius: 8px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+}
+
+/* Aplicando o estilo no site */
+
+.firstsquare-title {
+    color: #3f9596;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.firstsquare-subtitle {
+    color: #d7e973;
+    padding-left: 40px;
+}
+
+.firstsquare-text {
+    color: #c4c4cb;
+    padding-left: 40px;
+    padding-right: 120px;
+}
+
+.secondsquare-title {
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.secondsquare-text {
+    color: #ffffff;
+}
+
+.secondsquare-text2 {
+    font-size: 40px;
+}
+
+.secondsquare-button {
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: inset 0 0 0 0 #bfdf34;
+    color: #3d8280;
+    width: 238px;
+    height: 45px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: ease-in-out 0.8s;
+}
+
+.secondsquare-button:hover {
+    box-shadow: inset 238px 0 0 0 #bfdf34;
+    color: #ffffff;
+}
+
+
+.thirdsquare-title {
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.thirdsquare-text {
+    color: #ffffff;
+    line-height: 1%;
+    padding-bottom: 10px;
+}
+
+@media (max-width:768px) {
+    .row1 {
+        padding-bottom: 0px;
+    }
+
+    .row2 {
+        display: block;
+        text-align: center;
+    }
+    .first {
+        width: 100%;
+        max-width: 100vw;
+        padding-left: 0px;
+    }
+
+    .second {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .first h2, .first p {
+        width: 100%;
+    }
+}
